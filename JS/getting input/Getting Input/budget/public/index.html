@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculates weekly budget">
+    <meta name="theme-color" content="#ffffff">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>WEEKLY BUDGET</h1>
+    <form id="budgetForm">
+        <!-- numeric field for budget -->
+        <div>
+            <label for="budget">Budget</label>
+            <input type="number" id="budget" name="budget" min="0" max="100" value="0">
+        </div>
+        <div>
+            <label for="rent">Rent</label>
+            <input type="number" id="rent" name="rent" min="0" max="100" value="0">
+        </div>
+        <div>
+            <label for="food">Food</label>
+            <input type="number" id="food" name="food" min="0" max="100" value="0">
+        </div>
+        <div>
+            <label for="transport">Transport</label>
+            <input type="number" id="transport" name="transport" min="0" max="100" value="0">
+        </div>
+        <!-- calculate budget button-->
+        <div>
+            <button type="button" id="calculateBudget" name="calculateBudget">Calculate Budget</button>
+        </div>
+    </form>
+    <p id="output"></p>
+
+    <div>
+        <button type="button" id="reset" name="reset">Reset</button>
+    </div>
+</body>
+
+</html>

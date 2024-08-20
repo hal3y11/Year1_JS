@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Further examples</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>examples on here show validation </h1>
+    <form>
+       <div>
+        <label for="requiredExample">Name (required)</label>
+        <input type="text" id="requiredExample" name="requiredExample" required>
+      </div>
+      <div>
+        <label for="patternExample">This must be 9 characters - 3 numbers and then 6 letters</label>
+        <input type="text" id="patternExample" name="patternExample" minlength="9" maxlength="9" placeholder="3 numbers and then 6 letters" pattern="^\d{3}[a-zA-Z]{6}$" required>
+      </div>
+      <div>
+        <label for="patternExample2">This must be 4 numbers</label>
+        <input type="text" id="patternExample" name="patternExample" placeholder="4 numbers" pattern="\d{4,4}" required>
+      </div>
+     <button type="submit">Try to submit</button>
+    </form>
+  </body>
+</html>

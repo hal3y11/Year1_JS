@@ -1,0 +1,13 @@
+BUDGET CALCULATOR 
+
+
+INPUT WEEKLY BUDGET ---->
+input rent 	    ---->
+input food 	    ---->	
+input transport     ---->
+
+outgoings = rent + food + transport 
+remainingBudget = budget - outgoings
+
+OUTPUT MONEY LEFT
+'After your spending you have $remainingBudget of your budget left'

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A test page for forms">
+    <title>A test form for the dog show</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Test form for dog show</h1>
+    <form method="post">
+      <fieldset>
+        <legend>Details about your dog</legend>
+        <div>
+          <label for="dogName">Dog name (required)</label>
+          <input type="text" name="dogName" id="dogName" placeholder="Please enter your dogs name in here" required>
+        </div>
+        <div>
+          <label for="dogAge">Dog age</label>
+          <input type="number" name="dogAge" id="dogAge" min="0">
+        </div>
+        <div>
+          <label for="dogEntry">Date and time of entry to competition</label>
+          <input type="datetime-local" name="dogEntry" id="dogEntry">
+        </div>
+        <div>
+          <label for="dogJab">Date of dog's last jab</label>
+          <input type="date" name="dogJab" id="dogJab">
+        </div>
+        <div>
+          <label for="dogMeal">Time your dog eats their first meal</label>
+          <input type="time" name="dogMeal" id="dogMeal">
+        </div>
+        <div>
+          <label for="dogPic">Upload your dog picture</label>
+          <input type="file" name="dogPic" id="dogPic">
+        </div>
+        <div>
+          <label for="dogTreatNo">Number of dog treats per day</label>
+          <input type="range" name="dogTreatNo" id="dogTreatNo" min="0" max="10" step="1" value="5">
+        </div>
+        <div>
+          <label for="dogColour">Main colour of dog</label>
+          <input type="color" name="dogColour" id="dogColour" value="#e87000">
+        </div>
+        <div>
+          <label for="dogBirthPlace">Birth place of dog</label>
+          <select id="dogBirthPlace" name="dogBirthPlace">
+            <option value="England">England</option>
+            <option value="Scotland" selected>Scotland</option>
+            <option value="NIreland">Northern Ireland</option>
+            <option value="Wales">Wales</option>
+            <option value="NonUK">Not born in the UK</option>
+          </select>
+        </div>
+        <div>
+          <label for="dogBreed">Dog breed</label>
+          <input type="text" list="breeds" id="dogBreed" name="dogBreed">
+          <datalist id="breeds">
+            <option>Affenpinscher</option>
+            <option>Afghan Hound</option>
+            <option>African Hunting Dog</option>
+            <option>Airedale Terrier</option>
+            <option>Akbash Dog</option>
+            <option>Akita</option>
+            <option>Alapaha Blue Blood Bulldog</option>
+            <option>Alaskan Husky</option>
+            <option>Alaskan Malamute</option>
+            <option>American Bulldog</option>
+            <option>American Bully</option>
+            <option>American Eskimo Dog</option>
+            <option>American Eskimo Dog (Miniature)</option>
+            <option>American Foxhound</option>
+            <option>American Pit Bull Terrier</option>
+            <option>American Staffordshire Terrier</option>
+            <option>American Water Spaniel</option>
+            <option>Anatolian Shepherd Dog</option>
+            <option>Appenzeller Sennenhund</option>
+            <option>Australian Cattle Dog</option>
+            <option>Australian Kelpie</option>
+            <option>Australian Shepherd</option>
+            <option>Australian Terrier</option>
+            <option>Azawakh</option>
+            <option>Barbet</option>
+            <option>Basenji</option>
+            <option>Basset Bleu de Gascogne</option>
+            <option>Basset Hound</option>
+            <option>Beagle</option>
+            <option>Bearded Collie</option>
+            <option>Beauceron</option>
+            <option>Bedlington Terrier</option>
+            <option>Belgian Malinois</option>
+            <option>Belgian Tervuren</option>
+            <option>Bernese Mountain Dog</option>
+            <option>Bichon Frise</option>
+            <option>Black and Tan Coonhound</option>
+            <option>Bloodhound</option>
+            <option>Bluetick Coonhound</option>
+            <option>Boerboel</option>
+            <option>Border Collie</option>
+            <option>Border Terrier</option>
+            <option>Boston Terrier</option>
+            <option>Bouvier des Flandres</option>
+            <option>Boxer</option>
+            <option>Boykin Spaniel</option>
+            <option>Bracco Italiano</option>
+            <option>Briard</option>
+            <option>Brittany</option>
+            <option>Bull Terrier</option>
+            <option>Bull Terrier (Miniature)</option>
+            <option>Bullmastiff</option>
+            <option>Cairn Terrier</option>
+            <option>Cane Corso</option>
+            <option>Cardigan Welsh Corgi</option>
+            <option>Catahoula Leopard Dog</option>
+            <option>Caucasian Shepherd (Ovcharka)</option>
+            <option>Cavalier King Charles Spaniel</option>
+            <option>Chesapeake Bay Retriever</option>
+            <option>Chinese Crested</option>
+            <option>Chinese Shar-Pei</option>
+            <option>Chinook</option>
+            <option>Chow Chow</option>
+            <option>Clumber Spaniel</option>
+            <option>Cocker Spaniel</option>
+            <option>Cocker Spaniel (American)</option>
+            <option>Coton de Tulear</option>
+            <option>Dalmatian</option>
+            <option>Doberman Pinscher</option>
+            <option>Dogo Argentino</option>
+            <option>Dutch Shepherd</option>
+            <option>English Setter</option>
+            <option>English Shepherd</option>
+            <option>English Springer Spaniel</option>
+            <option>English Toy Spaniel</option>
+            <option>English Toy Terrier</option>
+            <option>Eurasier</option>
+            <option>Field Spaniel</option>
+            <option>Finnish Lapphund</option>
+            <option>Finnish Spitz</option>
+            <option>French Bulldog</option>
+            <option>German Pinscher</option>
+            <option>German Shepherd Dog</option>
+            <option>German Shorthaired Pointer</option>
+            <option>Giant Schnauzer</option>
+            <option>Glen of Imaal Terrier</option>
+            <option>Golden Retriever</option>
+            <option>Gordon Setter</option>
+            <option>Great Dane</option>
+            <option>Great Pyrenees</option>
+            <option>Greyhound</option>
+            <option>Griffon Bruxellois</option>
+            <option>Harrier</option>
+            <option>Havanese</option>
+            <option>Irish Setter</option>
+            <option>Irish Terrier</option>
+            <option>Irish Wolfhound</option>
+            <option>Italian Greyhound</option>
+            <option>Japanese Chin</option>
+            <option>Japanese Spitz</option>
+            <option>Keeshond</option>
+            <option>Komondor</option>
+            <option>Kooikerhondje</option>
+            <option>Kuvasz</option>
+            <option>Labrador Retriever</option>
+            <option>Lagotto Romagnolo</option>
+            <option>Lancashire Heeler</option>
+            <option>Leonberger</option>
+            <option>Lhasa Apso</option>
+            <option>Maltese</option>
+            <option>Miniature American Shepherd</option>
+            <option>Miniature Pinscher</option>
+            <option>Miniature Schnauzer</option>
+            <option>Newfoundland</option>
+            <option>Norfolk Terrier</option>
+            <option>Norwich Terrier</option>
+            <option>Nova Scotia Duck Tolling Retriever</option>
+            <option>Old English Sheepdog</option>
+            <option>Olde English Bulldogge</option>
+            <option>Papillon</option>
+            <option>Pekingese</option>
+            <option>Pembroke Welsh Corgi</option>
+            <option>Perro de Presa Canario</option>
+            <option>Pharaoh Hound</option>
+            <option>Plott</option>
+            <option>Pomeranian</option>
+            <option>Poodle (Miniature)</option>
+            <option>Poodle (Toy)</option>
+            <option>Pug</option>
+            <option>Puli</option>
+            <option>Pumi</option>
+            <option>Rat Terrier</option>
+            <option>Redbone Coonhound</option>
+            <option>Rhodesian Ridgeback</option>
+            <option>Rottweiler</option>
+            <option>Russian Toy</option>
+            <option>Saint Bernard</option>
+            <option>Saluki</option>
+            <option>Samoyed</option>
+            <option>Schipperke</option>
+            <option>Scottish Deerhound</option>
+            <option>Scottish Terrier</option>
+            <option>Shetland Sheepdog</option>
+            <option>Shiba Inu</option>
+            <option>Shih Tzu</option>
+            <option>Shiloh Shepherd</option>
+            <option>Siberian Husky</option>
+            <option>Silky Terrier</option>
+            <option>Smooth Fox Terrier</option>
+            <option>Soft Coated Wheaten Terrier</option>
+            <option>Spanish Water Dog</option>
+            <option>Spinone Italiano</option>
+            <option>Staffordshire Bull Terrier</option>
+            <option>Standard Schnauzer</option>
+            <option>Swedish Vallhund</option>
+            <option>Thai Ridgeback</option>
+            <option>Tibetan Mastiff</option>
+            <option>Tibetan Spaniel</option>
+            <option>Tibetan Terrier</option>
+            <option>Toy Fox Terrier</option>
+            <option>Treeing Walker Coonhound</option>
+            <option>Vizsla</option>
+            <option>Weimaraner</option>
+            <option>Welsh Springer Spaniel</option>
+            <option>West Highland White Terrier</option>
+            <option>Whippet</option>
+            <option>White Shepherd</option>
+            <option>Wire Fox Terrier</option>
+            <option>Wirehaired Pointing Griffon</option>
+            <option>Wirehaired Vizsla</option>
+            <option>Xoloitzcuintli</option>
+            <option>Yorkshire Terrier</option>
+          </datalist>
+        </div>
+        <fieldset>
+          <legend>Dog favourite treat</legend>
+          <div>
+            <input type="radio" id="bonio" name="treatType" value="bonio" checked>
+            <label for="bonio" class="tick">Bonio</label>           
+          </div>
+          <div>
+            <input type="radio" id="schmackos" name="treatType" value="schmackos">
+            <label for="schmackos" class="tick">Schmackos</label>       
+          </div>
+          <div>
+            <input type="radio" id="biscrok" name="treatType" value="biscrok">
+            <label for="biscrok" class="tick">Biscrok</label>           
+          </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Choose all the categories you wish your dog to enter</legend>
+        <div>
+          <input type="checkbox" id="bestDog" name="category" value="bestDog" checked>
+          <label for="bestDog" class="tick">Best Rescue Dog</label>         
+        </div>
+        <div>
+          <input type="checkbox" id="wagTail" name="category" value="wagTail">
+          <label for="wagTail" class="tick">Waggy Tail</label>         
+        </div>
+        <div>
+          <input type="checkbox" id="dogHome" name="category" value="dogHome">
+          <label for="dogHome" class="tick">Dog you would take home</label>          
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Details about you</legend>
+        <div>
+          <label for="humanName">Your name</label>
+          <input type="text" name="humanName" id="humanName" placeholder="Please enter your name in here" >
+        </div>
+        <div>
+          <label for="humanEmail">Your email</label>
+          <input type="email" name="humanEmail" id="humanEmail">
+        </div>
+        <div>
+          <label for="humanTel">Your phone number</label>
+          <input type="tel" name="humanTel" id="humanTel">
+        </div>
+        <div>
+          <label for="humanPwd">Your password</label>
+          <input type="password" name="humanPwd" id="humanPwd">
+        </div>
+        <div>
+          <label for="humanSub" class="tick">Tick to subscribe for newsletters</label>
+          <input type="checkbox" name="humanSub" id="humanSub">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Any other things we need to know?</legend>
+        <textarea id="anyThing" cols="30" rows="8">Stuff in the text area</textarea>
+      </fieldset>
+      <button type="submit">Save</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>

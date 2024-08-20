@@ -1,0 +1,84 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+form {
+  max-width: 90%;
+  padding: 1rem;
+}
+
+form div {
+  margin-top: 1rem;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.tick {
+  display: inline-block;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
+  width: 95%;
+  border: 1px solid;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+button {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  background: #3740ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+}
+
+button:hover,
+button:focus {
+  background: #000108;
+}
+
+button:focus {
+  outline: 0.3rem solid green;
+}         
+
+input:required {
+  background-color:palegoldenrod;
+} 
+
+input:valid {
+  background-color: palegreen;
+}
+
+input:invalid {
+  background-color: lightpink;
+}
+
+input:focus {
+  outline: 0.3rem solid green;
+}

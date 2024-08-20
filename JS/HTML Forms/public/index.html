@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a test form about cakes">
+    <meta name="theme-color" content="#fc03ca">
+    <link rel="stylesheet" href="style.css">
+    <title>Form test page</title>
+</head>
+<body>
+    <h1>This is a test form page</h1>
+    <form method="post">
+
+        <!-- name (required with a placeholder) -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      
+        <!-- password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <!-- email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <!-- tel -->
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel">
+      
+        <!-- dob -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      
+        <!-- store to collect from (data list) -->
+        <label for="store">Store to Collect From:</label>
+        <input list="stores" id="store" name="store" required>
+        <datalist id="stores">
+          <option value="East Midlands">
+          <option value="East of England">
+          <option value="Greater London">
+          <option value="North East">
+          <option value="North West">
+          <option value="South East">
+          <option value="South West">
+          <option value="West Midlands">
+          <option value="Yorkshire, The Humber">
+        </datalist>
+      
+        <!-- type of cakes (drop down) -->
+        <label for="cake-type">Type of Cakes:</label>
+        <select id="cake-type" name="cake-type" required>
+          <option value="plain-sponge">Plain Sponge</option>
+          <option value="red-velvet">Red Velvet</option>
+          <option value="coffee-and-walnut">Coffee and Walnut</option>
+          <option value="carrot">Carrot</option>
+        </select>
+      
+        <!-- number of cakes (number between 1 and 12) -->
+        <label for="number-of-cakes">Number of Cakes:</label>
+        <input type="number" id="number-of-cakes" name="number-of-cakes" min="1" max="12" required>
+      
+        <!-- add extras (checkbox, nothing selected to start with) -->
+        <label>Extras:</label>
+        <input type="checkbox" id="sprinkles" name="extras[]" value="sprinkles">
+        <label for="sprinkles">Sprinkles</label>
+        <input type="checkbox" id="flake" name="extras[]" value="flake">
+        <label for="flake">Flake</label>
+        <input type="checkbox" id="marshmallows" name="extras[]" value="marshmallows">
+        <label for="marshmallows">Marshmallows</label>
+      
+        <!-- type of box (radio, default is cardboard) -->
+        <label>Type of Box:</label>
+        <input type="radio" id="cardboard" name="box-type" value="cardboard" checked>
+        <label for="cardboard">Cardboard</label>
+        <input type="radio" id="wrapped" name="box-type" value="wrapped">
+        <label for="wrapped">Wrapped</label>
+        <input type="radio" id="delux" name="box-type" value="delux">
+        <label for="delux">Delux</label>
+      
+        <!-- any message (text area) -->
+        <label for="message">Any Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+      
+        <!-- reset button -->
+        <button type="reset">Reset</button>
+      
+      </form>
+      
+</body>
+</html>

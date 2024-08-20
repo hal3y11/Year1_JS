@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataList examples</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>
+      This is a datalist page - inspired by MDN -
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"
+        >https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist</a
+      >
+    </p>
+    <form>
+      <div>
+        <label for="popular">Hours datalist</label>
+        <input type="time" list="popularHours" id="popular" name="popular" />
+        <datalist id="popularHours">
+          <option value="12:00"></option>
+          <option value="13:00"></option>
+          <option value="14:00"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="tick">Range ticks</label>
+        <input type="range" list="tickmarks" min="0" max="30" step="10" id="tick" name="tick" />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="temp1">Temperature for room 1:</label>
+        <input type="range" id="temp1" name="temp1" list="values" min="0" max="100" step="25" />
+      </div>
+      <div>
+        <label for="temp2">Temperature for room 2:</label>
+        <input type="range" id="temp2" name="temp2" list="values" min="0" max="100" step="25" />
+      </div>
+      <div>
+        <label for="temp3">Temperature for room 3:</label>
+        <input type="range" id="temp3" name="temp3" list="values" min="0" max="100" step="25" />
+      </div>
+      <datalist id="values">
+        <option value="0" label="0"></option>
+        <option value="25" label="25"></option>
+        <option value="50" label="50"></option>
+        <option value="75" label="75"></option>
+        <option value="100" label="100"></option>
+      </datalist>
+      <div>
+        <label for="colors">Pick a red tone:</label>
+        <input type="color" list="redColors" id="colors" />
+        <datalist id="redColors">
+          <option value="#800000"></option>
+          <option value="#8B0000"></option>
+          <option value="#A52A2A"></option>
+          <option value="#DC143C"></option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>

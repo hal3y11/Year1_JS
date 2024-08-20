@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Further examples</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>bad things you should be aware of</h1>
+    <form>
+      <div>
+        <input type="text" id="badExample" name="badExample" placeholder="what is this field want as soon as you start to type - you need a label" />
+      </div>
+      <div>
+        <label for="requiredExample">Name (what if i don't give this as you haven't said you need it)</label>
+        <input type="text" id="requiredExample" name="requiredExample" required />
+      </div>
+      <div>
+        <label for="humanSub" class="tick">Tick to subscribe for newsletters (I have done this for you)</label>
+        <input type="checkbox" name="humanSub" id="humanSub" checked>
+      </div>
+      <div>
+        <label for="disabledExample">Use disabled with care - does it need to be there?</label>
+        <input type="text" id="disabledExample" name="disabledExample" disabled />
+      </div>
+      <p id="placeholder">Imagine lots of other form fields</p>
+      <div>
+        <label for="autofocusExample">Focus on me</label>
+        <input type="text" id="requiredExample" name="requiredExample" placeholder="lets confuse the user" autofocus />
+      </div>
+   
+      <input type="hidden" id="hdn" name="hdn" value="hidden stuff" />
+      <button type="submit">Try to submit</button>
+    </form>
+  </body>
+</html>
